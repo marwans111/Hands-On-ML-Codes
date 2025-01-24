@@ -1,0 +1,5 @@
+# Reapply pipeline to prepare training data
+housing_prepared = full_pipeline.fit_transform(housing)
+
+# Example usage of prepared data
+print(housing_prepared.shape)
