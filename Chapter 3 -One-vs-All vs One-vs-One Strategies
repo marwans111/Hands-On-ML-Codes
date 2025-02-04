@@ -1,0 +1,11 @@
+from sklearn.linear_model import SGDClassifier
+from sklearn.multiclass import OneVsOneClassifier
+
+# One-vs-All (OvA) - الافتراضي في Scikit-Learn
+sgd_clf.fit(X_train, y_train)
+print(sgd_clf.predict([some_digit]))
+
+# One-vs-One (OvO)
+ovo_clf = OneVsOneClassifier(SGDClassifier(random_state=42))
+ovo_clf.fit(X_train, y_train)
+print(ovo_clf.predict([some_digit]))
