@@ -1,0 +1,9 @@
+from sklearn.ensemble import RandomForestClassifier
+
+# تدريب نموذج التصنيف متعدد الفئات
+forest_clf = RandomForestClassifier(random_state=42)
+forest_clf.fit(X_train, y_train)
+
+# اختبار النموذج على بيانات جديدة
+sample_prediction = forest_clf.predict([some_digit])
+print(sample_prediction)
