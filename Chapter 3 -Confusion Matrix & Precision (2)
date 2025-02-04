@@ -1,0 +1,14 @@
+from sklearn.metrics import confusion_matrix, precision_score, recall_score
+from sklearn.model_selection import cross_val_predict
+
+# توليد التنبؤات لمجموعة التدريب
+y_train_pred = cross_val_predict(sgd_clf, X_train, y_train_5, cv=3)
+
+# حساب Confusion Matrix
+conf_matrix = confusion_matrix(y_train_5, y_train_pred)
+print(conf_matrix)
+
+# حساب Precision و Recall
+precision = precision_score(y_train_5, y_train_pred)
+recall = recall_score(y_train_5, y_train_pred)
+print(f"Precision: {precision}, Recall: {recall}")
