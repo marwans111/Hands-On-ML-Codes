@@ -1,0 +1,9 @@
+from sklearn.linear_model import SGDClassifier
+
+# تدريب نموذج التصنيف الثنائي
+sgd_clf = SGDClassifier(random_state=42)
+sgd_clf.fit(X_train, y_train_5)
+
+# اختبار النموذج على بيانات جديدة
+sample_prediction = sgd_clf.predict([some_digit])
+print(sample_prediction)
