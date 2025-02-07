@@ -6,9 +6,17 @@ This repository contains scripts and examples from my LinkedIn series based on t
 - **Chapter 1:** Introduction to Machine Learning  
 - **Chapter 2:** End-to-End Machine Learning Project  
 - **Chapter 3:** Classification (Binary, Multiclass & Multilabel)  
+- **Chapter 4:** Training Models (Linear Regression, Gradient Descent, Regularization)  
 - More coming soon! 🚀  
 
-Each chapter includes Python scripts demonstrating key concepts, such as data preprocessing, model training, performance evaluation, and advanced techniques.  
+### **📌 What's Inside?**  
+Each chapter contains **Python scripts** covering:  
+✅ **Data Preprocessing** (Cleaning, Feature Engineering)  
+✅ **Model Training** (Supervised Learning, Gradient Descent, Regression)  
+✅ **Performance Evaluation** (Precision, Recall, Confusion Matrix)  
+✅ **Advanced Techniques** (Regularization, Multilabel Classification, Polynomial Regression)  
 
-🔗 Follow the series and stay updated with the latest code and tutorials!  
+📂 **Explore the full codebase here:**  
+🔗 **[GitHub Repository](https://github.com/marwans111/Hands-On-ML-Codes)**  
 
+🚀 Stay updated with the latest code and tutorials by following the series!  
