@@ -1,0 +1,22 @@
+import numpy as np
+
+‎# إعداد البيانات
+np.random.seed(42)
+X = 2 * np.random.rand(100, 1)
+y = 4 + 3 * X + np.random.randn(100, 1)
+
+‎# إعداد المعاملات
+theta = np.random.randn(2, 1)
+learning_rate = 0.1
+iterations = 1000
+m = len(X)
+
+‎# إضافة العمود الخاص بالتحيز (Bias Term)
+X_b = np.c_[np.ones((100, 1)), X]
+
+‎# تنفيذ خوارزمية النزول التدريجي
+for iteration in range(iterations):
+    gradients = 2/m * X_b.T.dot(X_b.dot(theta) - y)
+    theta -= learning_rate * gradients
+
+print(f"Final theta values: {theta}")
