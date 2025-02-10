@@ -1,0 +1,22 @@
+
+‏from sklearn.svm import SVC
+
+# تدريب نموذج Hard Margin SVM
+‏hard_margin_svm = SVC(kernel="linear", C=1000)
+‏hard_margin_svm.fit(X, y)
+
+# تدريب نموذج Soft Margin SVM
+‏soft_margin_svm = SVC(kernel="linear", C=0.1)
+‏soft_margin_svm.fit(X, y)
+
+# رسم خطوط الفصل لكل نموذج
+‏plt.figure(figsize=(12, 5))
+‏plt.subplot(121)
+‏plot_svm_decision_boundary(hard_margin_svm, X, y)
+‏plt.title("Hard Margin SVM (C=1000)")
+
+‏plt.subplot(122)
+‏plot_svm_decision_boundary(soft_margin_svm, X, y)
+‏plt.title("Soft Margin SVM (C=0.1)")
+
+‏plt.show()
