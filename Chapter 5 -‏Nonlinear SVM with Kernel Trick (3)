@@ -1,0 +1,10 @@
+‏from sklearn.svm import SVC
+
+# تدريب نموذج SVM باستخدام Kernel Trick (RBF Kernel)
+‏rbf_svm_clf = SVC(kernel="rbf", gamma=0.5, C=1)
+‏rbf_svm_clf.fit(X, y)
+
+# رسم خط الفصل للنموذج
+‏plot_svm_decision_boundary(rbf_svm_clf, X, y)
+‏plt.title("Nonlinear SVM with RBF Kernel")
+‏plt.show()
